@@ -19,7 +19,7 @@
 
 \pagenumbering{Roman}
 \geometry{a4paper} %paper format
-\geometry{left=27.5mm,right=27.5mm,bottom=27.5mm,top=27.5mm} %margins
+\geometry{left=27.5mm,right=27.5mm,bottom=7mm,top=7mm} %margins
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
@@ -95,6 +95,11 @@
    \textbf{Marital Status:} #4 \\ \textbf{Social:} #5 \\ 
 }
 
+\newcommand{\projectSummaries}[1]
+{
+  \vspace{1mm}  \textbf{#1}\\ \vspace{1mm}
+}
+
 
 %%%%%%%%%%%%
 % DOCUMENT
@@ -143,76 +148,29 @@
 
 \hspace*{-12pt}$\bullet$
 \employer{Software Engineer}{Maro Technologies - Consultant @Allianz Turkey}{June 2021- Present}
+\keyword{Docker} \keyword{Kubernetes} \keyword{Java 8+ (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ}
+\keyword{Java 1.7 EE} \keyword{Java JSF} \keyword{Oracle ADF} \keyword{XHTML} \keyword{Weblogic} \keyword{Oracle12c}
 \begin{projects}
-
-    \item \project{TSS (Supplementary Health Insurance Online Sales)}
-    {TSS is a type of private insurance that provides coverage for additional healthcare services not included in basic health insurance plans or public health insurance programs. The Online TSS system facilitates the creation of proposals and policies directly on the Allianz platform without the need for an intermediary agency.}
-    { \keyword{Docker} \keyword{Kubernetes} \keyword{Java 8 (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ} }
-
-    \vspace{1.5mm}
-
-    \item \project{TCIP (Compulsory Earthquake Insurance Online Sales)}
-    {TCIP is a type of insurance policy that is mandatory by law in Turkey for all buildings and structures to provide coverage against damages caused by earthquakes. The Online TCIP system facilitates the creation of proposals and policies directly on the Allianz platform without the need for an intermediary agency.}
-    { \keyword{Docker} \keyword{Kubernetes} \keyword{Java 8 (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ} }
-
-    \vspace{1.5mm}
-
-    \item \project{Travel Health (Travel Health Insurance Online Sales)}
-    {Travel health is a type of insurance policy that provides coverage for medical expenses and emergencies that may occur while traveling outside of one's home country. The Online Travel Health system facilitates the creation of proposals and policies directly on the Allianz platform without the need for an intermediary agency.}
-    { \keyword{Docker} \keyword{Kubernetes} \keyword{Java 8 (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ} }
-
-    \newpage
-
-    \item \project{Car Insurance (Car Insurance Online Sales)}
-    {Car Insurance is a type of insurance policy that provides coverage for damages or losses resulting from car accidents, theft, or other covered events. The Online Car Insurance system facilitates the creation of proposals and policies directly on the Allianz platform without the need for an intermediary agency.}
-    { \keyword{Docker} \keyword{Kubernetes} \keyword{Java 8 (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ} }
-
-    \vspace{1.5mm}
-
-    \item \project{MTPL (Motor Third Party Liability Insurance Online Sales)}
-    {MTLP is a type of car insurance policy that covers the damages or injuries caused to third parties in the event of a car accident for which the insured driver is at fault.. The Online MTPL system facilitates the creation of proposals and policies directly on the Allianz platform without the need for an intermediary agency.}
-    { \keyword{Java 8 (Spring Boot)}  \keyword{Angular 11} \keyword{Oracle} \keyword{RabbitMQ}}
-
-    \vspace{1.5mm}
-
-    \item \project{DigitALL (Allianz Agency Tool)}
-    {DigitALL is the project that Allianz agencies can get what they need into. They can sale,report,notify (basically all insuerance activities) to their clients by using this tool.}
-    { \keyword{Java 1.7 EE} \keyword{Java JSF} \keyword{Oracle ADF} \keyword{XHTML} \keyword{Weblogic} \keyword{Oracle12c}}
-
+    \item \projectSummaries{TSS (Supplementary Health Insurance Online Sales)}
+    \item \projectSummaries{TELE (Telehealth Insurance Online Sales)}
+    \item \projectSummaries{TCIP (Compulsory Earthquake Insurance Online Sales)}
+    \item \projectSummaries{Travel Health (Travel Health Insurance Online Sales)}
+    \item \projectSummaries{Car Insurance (Car Insurance Online Sales)}
+    \item \projectSummaries{MTPL (Motor Third Party Liability Insurance Online Sales)}
+    \item \projectSummaries{DigitALL (Allianz Agency Tool)}
 \end{projects}
 
 \hspace*{-12pt}$\bullet$
 \employer{Software Engineer}{TTG International}{January 2016 - Jun 2021}
+\keyword{Docker} \keyword{Java 11+ (Spring Boot)} \keyword{Oracle} \keyword{MongoDB} \keyword{SNMP}
+\keyword{Rest API} \keyword{PL/SQL} \keyword{RabbitMQ} \keyword{React} \keyword{Nodejs} \keyword{UmiJs} \keyword{Ant.Desing UI}
+\keyword{WinForms} \keyword{\Csharp} \keyword{NHibernate} \keyword{DevExpress} \keyword{LLBLGen} 
 \begin{projects}
-
-  \item \project{SYNERGY (The Smart Energy Infrastructure Management System)}
-  {SYNERGY, currently used by Turkcell, is a system for monitoring energy related equipment such rectifiers, generators and free cooling located in base stations. In addition to monitoring, the system is also responsible for configuring devices remotely and create alerts based on various decision algorithms such as predictive maintenance.}
-  {\keyword{Docker} \keyword{Java 11 (Spring Boot)} \keyword{Oracle} \keyword{MongoDB} \keyword{SNMP} \keyword{Modbus} }
-
-  \vspace{1.5mm}
-
-  \item \project{ABID (Mobile Network Anomaly Detection)}
-  {ABID is used by Vodafone Turkey to detect anomalies in their mobile (GSM, UMTS, LTE) network for various KPIs using advanced machine learning algorithms to process millions data from around 300K network equipments every hour.}
-  {\keyword{Java 11 (Spring Boot)} \keyword{Rest API}  \keyword{Oracle} \keyword{PL/SQL} \keyword{RabbitMQ} }
-
-  \newpage
-
-  \item \project{CMEx (Configuration Management Expert)}
-  {CMeX is automatically identifies the inconsistencies in the network. With the CMEx a hidden configuration problems that may cause the poor performance can be detected before a fault or customer complaints arises.}
-  {\keyword{Java 11 (Spring Boot)} \keyword{React} \keyword{UmiJs} \keyword{Ant.Desing UI} \keyword{Oracle 11g} \keyword{PL/SQL} }
-
-  \vspace{1.5mm}
-
-  \item \project{TIPS (Transmission Inventory \& Planning)}
-  {TIPS is a \Csharp - WinForms based software being developed for Avea to plan and manage their transmission inventory which, currently, is carried out using spreadsheets. I am mainly responsible for managing and developing the modules related to various SDH equipments. I am involved in every part of the iteration cycle ranging from gathering requirements and network data from the engineers at Turk Telekom to front/back-end design, development and testing of the modules.}
-  {\keyword{Windows} \keyword{\Csharp} \keyword{WinForms} \keyword{Nodejs} \keyword{Oracle 11g} \keyword{PL/SQL}   \keyword{NHibernate} \keyword{DevExpress} \keyword{Ninject} \keyword{XenApp}  }
-
-  \vspace{1.5mm}
-
-  \item \project{Net-Trans (Leased Line Inventory Management)}
-  {Net-Trans is a \Csharp - WinForms based software currently used both by Avea and Vodafone Turkey to manage their leased line inventory. I was responsible for designing and implementing a financial planning module from scratch that will keep track of millions of Turkish Liras each year.}
-  {\keyword{Windows} \keyword{\Csharp} \keyword{WinForms} \keyword{Oracle} \keyword{PL/SQL} \keyword{LLBLGen} \keyword{DevExpress}}
-
+  \item \projectSummaries{SYNERGY (The Smart Energy Infrastructure Management System)}
+  \item \projectSummaries{ABID (Mobile Network Anomaly Detection)}
+  \item \projectSummaries{CMEx (Configuration Management Expert)}
+  \item \projectSummaries{TIPS (Transmission Inventory \& Planning)}
+  \item \projectSummaries{Net-Trans (Leased Line Inventory Management)}
 \end{projects}
 
 %%%%%%%%%%%%
